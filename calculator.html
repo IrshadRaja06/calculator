@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            border: 4px solid black;
+            display: inline-block;
+            padding: 30px;
+            padding-top: 10PX;
+            background-color: beige;
+        }
+           
+        body{
+           padding-top: 120px;
+            position: relative;
+            background-color: aqua;
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        
+        <div class="a"><h1>CALCULATOR</h1><input id="n1" type="number" placeholder="First Number"><br><br>
+    <input id="n2" type="number" placeholder="second Number"><br><br>
+    <button type="button" onclick="add()">ADD</button><br><br>
+    <button type="button" onclick="sub()">SUBSTRACT</button><br><br>
+    <button type="button" onclick="mul()">MULTIPLE</button><br><br>
+    <button type="button" onclick="div()">DIVIDE</button><br><br>
+    <p id="a1"></p></div></center>
+    <script>
+        function add(){
+            var a=parseInt(document.getElementById("n1").value)
+            var b=parseInt(document.getElementById("n2").value)
+            var c=a+b;
+            document.getElementById("a1").innerHTML="Result is "+c;
+        }
+        function sub(){
+            var a=parseInt(document.getElementById("n1").value)
+            var b=parseInt(document.getElementById("n2").value)
+            var c=a-b;
+            document.getElementById("a1").innerHTML="Result is "+c;
+        }
+        function mul(){
+            var a=parseInt(document.getElementById("n1").value)
+            var b=parseInt(document.getElementById("n2").value)
+            var c=a*b;
+            document.getElementById("a1").innerHTML="Result is "+c;
+        }
+        function div(){
+            var a=parseInt(document.getElementById("n1").value)
+            var b=parseInt(document.getElementById("n2").value)
+            var c=a/b;
+            document.getElementById("a1").innerHTML="Result is "+c;
+        }
+    
+    </script>
+</body>
+</html>
